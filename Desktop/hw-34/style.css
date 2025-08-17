@@ -1,17 +1,24 @@
+html,
+body {
+  min-width: 320px;
+}
 body {
   font-family: Arial, sans-serif;
   background-color: #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-width: 320px;
 }
+
 .container {
-  width: 996px;
-  margin-left: 250px;
-  margin-right: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  max-width: 1170px;
+  min-width: 320px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
 }
 header {
   display: flex;
@@ -142,8 +149,8 @@ main {
 }
 @media (max-width: 480px) {
   .container {
-    width: 450px;
-
+    max-width: 1024px;
+    min-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
@@ -169,7 +176,7 @@ main {
     width: 50px;
     height: 50px;
     background-color: brown;
-    background-image: url(menu_24dp_FFFF.svg);
+    background-image: url(menu.svg);
     border: none;
     background-size: 50px;
     background-repeat: no-repeat;
